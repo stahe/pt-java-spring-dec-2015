@@ -1,0 +1,1523 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introdução à linguagem Java e ao ecossistema Spring">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/pt-java-spring-dec-2015/anexos.html">
+      
+      
+        <link rel="prev" href="conclusao.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>22. Anexos - Introdução à linguagem Java e ao ecossistema Spring</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Introdução à linguagem Java e ao ecossistema Spring";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#22-anexos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Introdução à linguagem Java e ao ecossistema Spring" class="md-header__button md-logo" aria-label="Introdução à linguagem Java e ao ecossistema Spring" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introdução à linguagem Java e ao ecossistema Spring
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              22. Anexos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/pt-java-spring-dec-2015" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Introdução à linguagem Java e ao ecossistema Spring" class="md-nav__button md-logo" aria-label="Introdução à linguagem Java e ao ecossistema Spring" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introdução à linguagem Java e ao ecossistema Spring
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/pt-java-spring-dec-2015" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bem-vindos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introducao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trabalho-o-problema.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. [Trabalho]: O Problema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-classes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. [TD]: Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-arquiteturas-em-camadas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. [TD]: Arquiteturas em camadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="curso-introducao-ao-spring-framework.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. [Curso]: Introdução ao Spring Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="curso-introducao-a-api-jdbc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. [Curso]: Introdução à API JDBC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-implementacao-da-camada-dao-do-td-utilizando-a-api-jdbc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. [TD]: Implementação da camada [DAO] do TD utilizando a API JDBC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-a-camada-business.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. [TD]: A camada [business]
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-implementacao-da-camada-ui-com-um-programa-de-consola.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. [TD]: Implementação da camada [ui] com um programa de consola
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trabalho-implementacao-da-camada-ui-utilizando-uma-interface-swing---.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. [Trabalho]: Implementação da camada [ui] utilizando uma interface Swing - 
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="curso-gestao-de-bases-de-dados-relacionais-com-spring-data.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. [Curso]: Gestão de bases de dados relacionais com Spring Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-implementacao-da-camada-dao-do-td-utilizando-spring-data.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. [TD]: Implementação da camada [DAO] do TD utilizando [Spring Data]
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="curso-expor-uma-base-de-dados-na-web-com-spring-mvc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. [Curso]: Expor uma base de dados na Web com Spring MVC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-exposicao-web-da-camada-de-negocios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. [TD]: Exposição web da camada [de negócios]
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-criacao-de-um-cliente-para-o-servico-web.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. [TD]: Criação de um cliente para o serviço web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="curso-protecao-do-acesso-a-um-servico-web-com-o-spring-security.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. [Curso]: Proteção do acesso a um serviço web com o Spring Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-protecao-do-servidor-web--json-para-eleicoes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17. [TD]: Proteção do servidor web / JSON para eleições
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="curso-partilha-de-recursos-entre-origens.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18. [Curso]: Partilha de Recursos entre Origens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="td-partilha-de-recursos-entre-origens-cors.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19. [TD] Partilha de Recursos entre Origens (CORS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacao-assincrona-com-rxjava.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20. Programação assíncrona com RxJava
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21. Conclusão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. Anexos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="anexos.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. Anexos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#221-instalacao-de-um-jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.1. Instalação de um JDK
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#222-instalacao-do-maven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.2. Instalação do Maven
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223-instalacao-do-sts-spring-tool-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.3. Instalação do STS (Spring Tool Suite)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224-instalacao-do-ide-netbeans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.4. Instalação do IDE NetBeans
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#225-instalacao-do-plugin-advanced-rest-client-para-o-chrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.5. Instalação do plugin [Advanced Rest Client] para o Chrome
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#226-manipulacao-de-json-em-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.6. Manipulação de JSON em Java
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#227-instalacao-do-wampserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.7. Instalação do [WampServer]
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="refheading18054265679331"></a></p>
+<h1 id="22-anexos">22. <span style="color: #365f91">Anexos</span></h1>
+<p><span style="color: #000000">Aqui explicamos como instalar as ferramentas utilizadas neste documento em máquinas com Windows 7 ou 8. As capturas de ecrã mostram geralmente as versões de 64 bits dos SGBDs e das ferramentas instaladas. O leitor deve adaptar-se ao seu próprio ambiente.</span></p>
+<p><a id="refheading1633352067866943"></a></p>
+<h2 id="221-instalacao-de-um-jdk">22.1. <span style="color: #4f81bd">Instalação de um JDK</span></h2>
+<p><a id="refheading256713779844303"></a>O JDK mais recente pode ser encontrado no URL [<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"><u><span style="color: #0563c1">http://www.oracle.com/technetwork/java/javase/downloads/index.html</span></u></a>] (outubro de 2014). Doravante, referir-nos-emos ao diretório de instalação do JDK como &lt;jdk-install&gt;.</p>
+<p><a id="refheading472751712028290"></a></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000229000001BDF10714D0.png" width="387" height="311" style="display:inline-block; margin:4px;width:10.239cm;height:8.239cm;" class="odt-zoomable" data-zoom-src="images/1000000000000229000001BDF10714D0.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p><a id="refheading261309838046689"></a></p>
+<h2 id="222-instalacao-do-maven">22.2. <span style="color: #4f81bd"><span style="color: #4f81bd">Instalação do Maven</span></span></h2>
+<p><a id="refheading256715779844303"></a>O Maven é uma ferramenta para gerir dependências num projeto Java e muito mais. Está disponível (em outubro de 2014) no URL [<a href="http://maven.apache.org/download.cgi"><u><span style="color: #0563c1">http://maven.apache.org/download.cgi</span></u></a>].</p>
+<p><a id="refheading463261712028290"></a></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000269000000BB1072BA49.png" width="432" height="131" style="display:inline-block; margin:4px;width:11.419cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/1000000000000269000000BB1072BA49.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Descarregue e descompacte o arquivo. Iremos referir-nos à pasta de instalação do Maven como &lt;maven-install&gt;.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019A000001036E27CF1E.png" width="205" height="129" style="display:inline-block; margin:4px;width:5.424cm;height:3.425cm;" class="odt-zoomable" data-zoom-src="images/100000000000019A000001036E27CF1E.png" /></td></tr></table>
+
+<ul>
+  <li>Em [1], o ficheiro [conf/settings.xml] configura o Maven;
+  </li>
+</ul>
+
+<p>Contém as seguintes linhas:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- localRepository</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   | The path to the local repository maven will use to store artifacts.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   | Default: ${user.home}/.m2/repository</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
+</code></pre></div>
+
+<p>O valor padrão na linha 4 pode causar problemas para alguns softwares que utilizam o Maven se, tal como eu, o seu caminho {user.home} contiver um espaço (por exemplo, [C:\Users\Serge Tahé]). Iremos especificar (linha 7) uma pasta diferente para o repositório local do Maven:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- localRepository</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   | The path to the local repository maven will use to store artifacts.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   |</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   | Default: ${user.home}/.m2/repository</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  --&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">localRepository</span><span style="color:#008080">&gt;</span><span style="background-color:#ff950e;color:#000000">D:\Programs\devjava\maven\.m2\repository</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">localRepository</span><span style="color:#008080">&gt;</span></span></span>
+</code></pre></div>
+
+<p>Na linha 7, evite utilizar um caminho que contenha espaços.</p>
+<p><a id="refheading261311838046689"></a></p>
+<h2 id="223-instalacao-do-sts-spring-tool-suite">22.3. <span style="color: #4f81bd">Instalação do STS (Spring Tool Suite)</span></h2>
+<p><a id="refheading179816779844303"></a>Iremos instalar <strong>o SpringSource Tool Suite</strong> [<a href="http://www.springsource.com/developer/sts"><u><span style="color: #0563c1">http://www.springsource.com/developer/sts</span></u></a>] (outubro de 2014), um ambiente Eclipse pré-configurado com vários plugins relacionados com o framework Spring e com uma configuração do Maven pré-instalada.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A90000021BD44B3C3B.png" width="597" height="270" style="display:inline-block; margin:4px;width:15.783cm;height:7.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A90000021BD44B3C3B.png" /></td></tr></table>
+
+<p><a id="refheading1633372067866943"></a></p>
+<ul>
+  <li>Aceda ao  site do  <b>SpringSource Tool Suite </b>(STS) [1] para descarregar a versão atual do STS [2A] [2B].
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D90000012D8EE350C6.png" width="621" height="151" style="display:inline-block; margin:4px;width:16.418cm;height:3.983cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D90000012D8EE350C6.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054C000002423EF1190C.png" width="678" height="289" style="display:inline-block; margin:4px;width:17.939cm;height:7.646cm;" class="odt-zoomable" data-zoom-src="images/100000000000054C000002423EF1190C.png" /></td></tr></table>
+
+<ul>
+  <li>O ficheiro descarregado é um instalador que cria a estrutura de diretórios [3A] [3B]. Em [4], executamos o ficheiro executável,
+  </li>
+  <li>em [5], a janela do espaço de trabalho do IDE após fechar a janela de boas-vindas. Em [6], exibe a janela dos servidores de aplicações,
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000215000000A3FC050061.png" width="267" height="82" style="display:inline-block; margin:4px;width:7.052cm;height:2.157cm;" class="odt-zoomable" data-zoom-src="images/1000000000000215000000A3FC050061.png" /></td></tr></table>
+
+<ul>
+  <li>em [7], a janela dos servidores. Um servidor está registado. Trata-se de um servidor VMware compatível com Tomcat.
+  </li>
+</ul>
+
+<p>Deve especificar o diretório de instalação do Maven ao STS:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054B00000241469F151F.png" width="678" height="288" style="display:inline-block; margin:4px;width:17.926cm;height:7.632cm;" class="odt-zoomable" data-zoom-src="images/100000000000054B00000241469F151F.png" /></td></tr></table>
+
+<ul>
+  <li>em [1-2], configure o STS;
+  </li>
+  <li>em [3-4], adicione uma nova instalação do Maven;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000535000002161934DC71.png" width="667" height="267" style="display:inline-block; margin:4px;width:17.635cm;height:7.064cm;" class="odt-zoomable" data-zoom-src="images/1000000000000535000002161934DC71.png" /></td></tr></table>
+
+<ul>
+  <li>em [5], especifique o diretório de instalação do Maven;
+  </li>
+  <li>em [6], conclua o assistente;
+  </li>
+  <li>em [7], defina a nova instalação do Maven como a instalação predefinida;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000039E000003149A27379F.png" width="463" height="394" style="display:inline-block; margin:4px;width:12.25cm;height:10.425cm;" class="odt-zoomable" data-zoom-src="images/100000000000039E000003149A27379F.png" /></td></tr></table>
+
+<ul>
+  <li>Em [8-9], verifique o repositório local do Maven, a pasta onde serão armazenadas as dependências descarregadas e onde o STS colocará os artefactos compilados;
+  </li>
+</ul>
+
+<p>Deve também selecionar um JDK (Java Development Kit) para executar os projetos Eclipse com e sem o Maven [1-5].</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054700000268D8990626.png" width="676" height="308" style="display:inline-block; margin:4px;width:17.873cm;height:8.149cm;" class="odt-zoomable" data-zoom-src="images/100000000000054700000268D8990626.png" /></td></tr></table>
+
+<p>Em [4], pode adicionar JDKs (Java Development Kits) ou JREs (Java Runtime Environments). O JRE pode executar ficheiros .class, mas não consegue compilar ficheiros .java para os produzir. O JDK consegue fazer ambas as coisas. Deve escolher um JDK porque certas operações do Maven requerem um.</p>
+<p>Para criar um projeto Eclipse, proceda da seguinte forma:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000535000001BCA2B2040D.png" width="667" height="222" style="display:inline-block; margin:4px;width:17.635cm;height:5.874cm;" class="odt-zoomable" data-zoom-src="images/1000000000000535000001BCA2B2040D.png" /></td></tr></table>
+
+<ul>
+  <li>Em [3], atribua um nome ao projeto;
+  </li>
+  <li>em [4], selecione uma pasta existente e vazia;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046E0000018B0AD98EFB.png" width="567" height="198" style="display:inline-block; margin:4px;width:15.002cm;height:5.226cm;" class="odt-zoomable" data-zoom-src="images/100000000000046E0000018B0AD98EFB.png" /></td></tr></table>
+
+<ul>
+  <li>em [5], o projeto é criado;
+  </li>
+  <li>nos passos [5-8], crie um pacote. Um pacote é uma pasta que contém código Java. Duas classes podem ter o mesmo nome se pertencerem a pacotes diferentes. Dentro de um projeto, não pode haver dois pacotes com o mesmo nome. Portanto, não pode utilizar um nome de pacote que já exista numa das dependências do projeto. Uma empresa utilizará um nome de pacote que especifique a empresa, o projeto e as suas várias ramificações;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002EB00000132766BF817.png" width="374" height="153" style="display:inline-block; margin:4px;width:9.883cm;height:4.048cm;" class="odt-zoomable" data-zoom-src="images/10000000000002EB00000132766BF817.png" /></td></tr></table>
+
+<ul>
+  <li>em [9], atribua um nome ao pacote;
+  </li>
+  <li>em [10], o pacote criado;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003E5000001CAEC531591.png" width="499" height="229" style="display:inline-block; margin:4px;width:13.19cm;height:6.059cm;" class="odt-zoomable" data-zoom-src="images/10000000000003E5000001CAEC531591.png" /></td></tr></table>
+
+<ul>
+  <li>em [11-13], crie uma classe dentro do pacote que foi criado;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000469000002E8F3D0CA82.png" width="565" height="372" style="display:inline-block; margin:4px;width:14.937cm;height:9.843cm;" class="odt-zoomable" data-zoom-src="images/1000000000000469000002E8F3D0CA82.png" /></td></tr></table>
+
+<ul>
+  <li>em [14], nomeie a classe (deve seguir a convenção CamelCase — cada palavra no nome deve começar com uma letra maiúscula seguida de letras minúsculas);
+  </li>
+  <li>em [15], verifique o pacote;
+  </li>
+  <li>em [16], assinale a caixa. Isto solicita que o método estático [main] seja gerado. Este método torna uma classe executável, ou seja, a primeira classe a ser executada num projeto;
+  </li>
+  <li>em [17], a classe assim criada;
+  </li>
+</ul>
+
+<p>Digite o seguinte código no método [main], que exibe texto na consola:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> st.istia;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Test01 {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">static</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> main(String[] </span><span style="color:#6a3e3e">args</span><span style="color:#000000">) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        System.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">out</span><span style="color:#000000">.println(</span><span style="color:#2a00ff">&quot;test01&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+</code></pre></div>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003AE000003AE44484CD9.png" width="471" height="471" style="display:inline-block; margin:4px;width:12.462cm;height:12.462cm;" class="odt-zoomable" data-zoom-src="images/10000000000003AE000003AE44484CD9.png" /></td></tr></table>
+
+<ul>
+  <li>Em [18-20], execute a classe. O seu método [main] será então executado;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000373000000DF84F7A519.png" width="442" height="111" style="display:inline-block; margin:4px;width:11.682cm;height:2.949cm;" class="odt-zoomable" data-zoom-src="images/1000000000000373000000DF84F7A519.png" /></td></tr></table>
+
+<ul>
+  <li>em [21-22], o resultado da aplicação;
+  </li>
+</ul>
+
+<p>Se a vista [Console] não estiver presente, proceda da seguinte forma [1-4]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B700000350CE52338C.png" width="604" height="424" style="display:inline-block; margin:4px;width:15.968cm;height:11.218cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B700000350CE52338C.png" /></td></tr></table>
+
+<p>Ao importar um projeto Eclipse, este pode conter erros. Isto pode dever-se a uma configuração incorreta do projeto. Para corrigir o erro (se houver), proceda da seguinte forma:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000039C000002C4FAEA5201.png" width="462" height="354" style="display:inline-block; margin:4px;width:12.224cm;height:9.366cm;" class="odt-zoomable" data-zoom-src="images/100000000000039C000002C4FAEA5201.png" /></td></tr></table>
+
+<ul>
+  <li>Em [1], modifique o [Build Path] do projeto;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005330000019E025DAAA1.png" width="666" height="207" style="display:inline-block; margin:4px;width:17.609cm;height:5.477cm;" class="odt-zoomable" data-zoom-src="images/10000000000005330000019E025DAAA1.png" /></td></tr></table>
+
+<ul>
+  <li>Em [2], o projeto está configurado para utilizar uma JVM 1.5;
+  </li>
+  <li>Em [3], remova esta dependência;
+  </li>
+  <li>em [4], adicione uma nova dependência;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004AE00000258AC3222A5.png" width="599" height="300" style="display:inline-block; margin:4px;width:15.849cm;height:7.938cm;" class="odt-zoomable" data-zoom-src="images/10000000000004AE00000258AC3222A5.png" /></td></tr></table>
+
+<ul>
+  <li>em [5], adicione uma JVM;
+  </li>
+  <li>Em [6], selecione a JVM para a máquina;
+  </li>
+</ul>
+
+<p>Depois de fazer isso, guarde as alterações e vá para a propriedade [Compilador Java] do projeto [7]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000513000002DD1DAA5FCC.png" width="650" height="367" style="display:inline-block; margin:4px;width:17.186cm;height:9.698cm;" class="odt-zoomable" data-zoom-src="images/1000000000000513000002DD1DAA5FCC.png" /></td></tr></table>
+
+<ul>
+  <li>em [8], configure o compilador para aceitar todas as funcionalidades da linguagem Java até à versão 1.7 (ou 1.8), inclusive;
+  </li>
+  <li>Em [9], clique em OK;
+  </li>
+  <li>Em [10], o projeto reconfigurado já não deverá conter quaisquer erros;
+  </li>
+</ul>
+
+<p>Além disso, o projeto importado pode utilizar a codificação de caracteres UTF-8. Siga estes passos para definir esta codificação no projeto importado [1-4]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F40000049387C3F753.png" width="634" height="586" style="display:inline-block; margin:4px;width:16.775cm;height:15.492cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F40000049387C3F753.png" /></td></tr></table>
+
+<p>Além disso, pode ser útil desativar a verificação ortográfica no projeto para evitar que os comentários em francês sejam sublinhados como incorretos. Siga os passos [1-4] abaixo:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005300000026D8A8A0647.png" width="664" height="310" style="display:inline-block; margin:4px;width:17.568cm;height:8.214cm;" class="odt-zoomable" data-zoom-src="images/10000000000005300000026D8A8A0647.png" /></td></tr></table>
+
+<p><a id="refheading78364566070260"></a></p>
+<h2 id="224-instalacao-do-ide-netbeans">22.4. <span style="color: #4f81bd">Instalação do IDE NetBeans</span></h2>
+<p>O NetBeans está disponível em [<a href="http://netbeans.org/downloads/"><u><span style="color: #0563c1">http://netbeans.org/downloads/</span></u></a>].</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001E0000002493C747726.png" width="336" height="410" style="display:inline-block; margin:4px;width:8.89cm;height:10.836cm;" class="odt-zoomable" data-zoom-src="images/10000000000001E0000002493C747726.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<p>Pode descarregar a versão Java SE (Standard Edition) a partir do link acima.</p>
+<p><a id="refheading398832986338762"></a></p>
+<h2 id="225-instalacao-do-plugin-advanced-rest-client-para-o-chrome">22.5. <span style="color: #4f81bd">Instalação do plugin [Advanced Rest Client] para o Chrome</span></h2>
+<p><a id="refheading179814779844303"></a>Neste documento, utilizamos o navegador <strong>Chrome</strong> da Google (<a href="http://www.google.fr/intl/fr/chrome/browser/"><u><span style="color: #0563c1">http://www.google.fr/intl/fr/chrome/browser/</span></u></a>). Iremos adicionar-lhe a extensão [Advanced Rest Client]. Eis como o fazer:</p>
+<p><a id="refheading2334521890746156"></a></p>
+<ul>
+  <li><a id="advanced-rest-client1"></a>Aceda à [Google Web Store] (<a href="https://chrome.google.com/webstore"><u><span style="color: #0563c1">https://chrome.google.com/webstore</span></u></a>) utilizando o navegador Chrome;
+  </li>
+  <li>Procure a aplicação [Advanced Rest Client]:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B0000000D21DA44C58.png" width="302" height="147" style="display:inline-block; margin:4px;width:7.999cm;height:3.888cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B0000000D21DA44C58.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+  <li>A aplicação fica então disponível para download:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003BB000000AE1112526C.png" width="661" height="120" style="display:inline-block; margin:4px;width:17.48cm;height:3.186cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BB000000AE1112526C.png" /></td></tr></table>
+
+<ul>
+  <li>Para o obter, terá de criar uma conta Google. A [Google Web Store] irá então solicitar uma confirmação [1]:
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005230000022AF280DFF2.png" width="658" height="277" style="display:inline-block; margin:4px;width:17.397cm;height:7.329cm;" class="odt-zoomable" data-zoom-src="images/10000000000005230000022AF280DFF2.png" /></td></tr></table>
+
+<ul>
+  <li>Em [2], a extensão adicionada está disponível na opção [Aplicações] [3]. Esta opção aparece em cada nova guia que criar (CTRL-T) no navegador.
+  </li>
+</ul>
+<p><a id="refheading18056265679331"></a></p>
+<h2 id="226-manipulacao-de-json-em-java">22.6. <span style="color: #4f81bd">Manipulação de JSON em Java</span></h2>
+<p><a id="refheading191922103626402"></a>De uma forma trans<a id="json"></a> parente para o programador, o framework [Spring MVC] utiliza a biblioteca JSON [Jackson]. Para ilustrar o que é JSON (JavaScript Object Notation), apresentamos aqui um programa que serializa objetos em JSON e faz o inverso, deserializando as cadeias de caracteres JSON geradas para recriar os objetos originais.</p>
+<p>A biblioteca «Jackson» permite-lhe construir:</p>
+<ul>
+  <li>a cadeia JSON de um objeto: <i>new ObjectMapper().writeValueAsString(object)</i>;
+  </li>
+  <li>um objeto a partir de uma cadeia JSON: <i>new ObjectMapper().readValue(jsonString, Object.class)</i>.
+  </li>
+</ul>
+
+<p>Ambos os métodos podem lançar uma <em>IOException</em>. Aqui está um exemplo.</p>
+<p>O projeto acima é um projeto Maven com o seguinte ficheiro [pom.xml];</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;UTF-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">project</span> <span style="color:#7f007f">xmlns</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://maven.apache.org/POM/4.0.0&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">         <span style="color:#7f007f">xmlns:xsi</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">         <span style="color:#7f007f">xsi:schemaLocation</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">modelVersion</span><span style="color:#008080">&gt;</span><span style="color:#000000">4.0.0</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">modelVersion</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">istia.st.pam</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">json</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">1.0-SNAPSHOT</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">com.fasterxml.jackson.core</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">jackson-databind</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">2.3.3</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">project</span><span style="color:#008080">&gt;</span></span></span>
+</code></pre></div>
+
+<ul>
+  <li>linhas 12–16: a dependência que importa a biblioteca «Jackson»;
+  </li>
+</ul>
+
+<p>A classe [Person] é a seguinte:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.json;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Personne {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// data</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> String nom;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> String prenom;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> age;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// manufacturers</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Personne() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Personne(String nom, String prénom, </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> âge) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.nom = nom;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.prenom = prénom;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.age = âge;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// signature</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String toString() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> String.format(</span><span style="color:#2a00ff">&quot;Personne[%s, %s, %d]&quot;</span><span style="color:#000000">, nom, prenom, age);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// getters and setters</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+</code></pre></div>
+
+<p>A classe [Main] é a seguinte:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.json;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> com.fasterxml.jackson.databind.ObjectMapper;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.io.IOException;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.HashMap;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.Map;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Main {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// the serialization / deserialization tool</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">static</span><span style="color:#000000"> ObjectMapper mapper = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ObjectMapper();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">static</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> main(String[] args) </span><span style="font-weight:bold;color:#7f0055">throws</span><span style="color:#000000"> IOException {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// creation of a person</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Personne paul = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Personne(</span><span style="color:#2a00ff">&quot;Denis&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;Paul&quot;</span><span style="color:#000000">, 40);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// display jSON</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    String json = mapper.writeValueAsString(paul);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;Json=&quot;</span><span style="color:#000000"> + json);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// person instantiation from Json</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Personne p = mapper.readValue(json, Personne.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// person display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;Personne=&quot;</span><span style="color:#000000"> + p);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// a picture</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Personne virginie = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Personne(</span><span style="color:#2a00ff">&quot;Radot&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;Virginie&quot;</span><span style="color:#000000">, 20);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Personne[] personnes = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Personne[]{paul, virginie};</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// json display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    json = mapper.writeValueAsString(personnes);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;Json personnes=&quot;</span><span style="color:#000000"> + json);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// dictionary</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    Map&lt;String, Personne&gt; hpersonnes = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> HashMap&lt;String, Personne&gt;();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    hpersonnes.put(</span><span style="color:#2a00ff">&quot;1&quot;</span><span style="color:#000000">, paul);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    hpersonnes.put(</span><span style="color:#2a00ff">&quot;2&quot;</span><span style="color:#000000">, virginie);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// json display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    json = mapper.writeValueAsString(hpersonnes);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;Json hpersonnes=&quot;</span><span style="color:#000000"> + json);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+</code></pre></div>
+
+<p>A execução desta classe produz a seguinte saída no ecrã:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>Json={&quot;nom&quot;:&quot;Denis&quot;,&quot;prenom&quot;:&quot;Paul&quot;,&quot;age&quot;:40}
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>Personne=Personne[Denis, Paul, 40]
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>Json personnes=[{&quot;nom&quot;:&quot;Denis&quot;,&quot;prenom&quot;:&quot;Paul&quot;,&quot;age&quot;:40},{&quot;nom&quot;:&quot;Radot&quot;,&quot;prenom&quot;:&quot;Virginie&quot;,&quot;age&quot;:20}]
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>Json hpersonnes={&quot;2&quot;:{&quot;nom&quot;:&quot;Radot&quot;,&quot;prenom&quot;:&quot;Virginie&quot;,&quot;age&quot;:20},&quot;1&quot;:{&quot;nom&quot;:&quot;Denis&quot;,&quot;prenom&quot;:&quot;Paul&quot;,&quot;age&quot;:40}}
+</code></pre></div></td></tr></table></div>
+<p>Pontos-chave do exemplo:</p>
+<ul>
+  <li>o objeto [ObjectMapper] necessário para as transformações JSON/Object: linha 11;
+  </li>
+  <li>a transformação [Person] --&gt; JSON: linha 17;
+  </li>
+  <li>a transformação de JSON para [Person]: linha 20;
+  </li>
+  <li>a [IOException] lançada por ambos os métodos: linha 13.
+  </li>
+</ul>
+
+<p><a id="refheading17456069506693"></a></p>
+<h2 id="227-instalacao-do-wampserver">22.7. <span style="color: #4f81bd">Instalação do [WampServer]</span></h2>
+<p><a id="refheading78368566070260"></a>O [WampServer] é<a id="wampserver"></a> um pacote de software para desenvolvimento em PHP / MySQL / Apache numa máquina Windows. Iremos utilizá-lo exclusivamente para o SGBD MySQL.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000506000001BED3B20929.png" width="643" height="223" style="display:inline-block; margin:4px;width:17.013cm;height:5.9cm;" class="odt-zoomable" data-zoom-src="images/1000000000000506000001BED3B20929.png" /></td></tr></table>
+
+<ul>
+  <li>No site do [WampServer] [1], escolha a versão adequada [2],
+  </li>
+  <li>o executável descarregado é um instalador. São solicitadas várias informações durante a instalação. Estas não dizem respeito ao MySQL, pelo que podem ser ignoradas. A janela [3] aparece no final da instalação. Inicie o [WampServer],
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000243000001C97EB08BFA.png" width="290" height="229" style="display:inline-block; margin:4px;width:7.661cm;height:6.047cm;" class="odt-zoomable" data-zoom-src="images/1000000000000243000001C97EB08BFA.png" /></td></tr></table>
+
+<ul>
+  <li>em [4], o ícone [WampServer] aparece na barra de tarefas, no canto inferior direito do ecrã [4],
+  </li>
+  <li>ao clicar nele, aparece o menu [5]. Este permite-lhe gerir o servidor Apache e o SGBD MySQL. Para gerir este último, utilize a opção [PhpMyAdmin],
+  </li>
+  <li>que abre a janela apresentada abaixo,
+  </li>
+</ul>
+
+<p><img src="images/10000000000003C600000186DE03B7E4.png" width="670" height="271" style="width:17.729cm;height:7.158cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003C600000186DE03B7E4.png" /></p>
+<p>Forneceremos alguns detalhes sobre a utilização do [PhpMyAdmin]. Na <a href="#refheading59391820156038"><u><span style="color: #0563c1">secção 6.4.2</span></u></a>, mostramos como utilizá-lo para criar uma base de dados a partir de um script SQL.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Este curso-tutorial escrito por <strong>Serge Tahé</strong> é disponibilizado ao público de acordo com os termos da
+        <em>Licença Creative Commons Atribuição – Sem uso comercial –
+        Partilha nas mesmas condições 3.0 não adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
