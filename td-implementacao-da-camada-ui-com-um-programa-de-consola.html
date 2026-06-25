@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://stahe.github.io/pt-java-spring-dec-2015/td-implementacao-da-camada-ui-com-um-programa-de-consola.html">
       
       
-        <link rel="prev" href="td-a-camada-business.html">
+        <link rel="prev" href="td-a-camada-metier.html">
       
       
-        <link rel="next" href="trabalho-implementacao-da-camada-ui-utilizando-uma-interface-swing---.html">
+        <link rel="next" href="td-implementacao-da-camada-ui-com-uma-interface-swing.html">
       
       
         
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="trabalho-o-problema.html" class="md-nav__link">
+      <a href="td-o-problema.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. [Trabalho]: O Problema
+    2. [TD]: O problema
   
 
     
@@ -411,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-introducao-ao-spring-framework.html" class="md-nav__link">
+      <a href="cours-introducao-ao-framework-spring.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. [Curso]: Introdução ao Spring Framework
+    5. [Cours]: Introdução ao framework Spring
   
 
     
@@ -438,14 +440,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-introducao-a-api-jdbc.html" class="md-nav__link">
+      <a href="cours-introducao-ao-api-jdbc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. [Curso]: Introdução à API JDBC
+    6. [Cours]: Introdução ao API JDBC
   
 
     
@@ -465,14 +467,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-implementacao-da-camada-dao-do-td-utilizando-a-api-jdbc.html" class="md-nav__link">
+      <a href="td-implementacao-da-camada-dao-do-td-com-o-api-jdbc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. [TD]: Implementação da camada [DAO] do TD utilizando a API JDBC
+    7. [TD]: Implementação da camada [DAO] do TD com o API JDBC
   
 
     
@@ -492,14 +494,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-a-camada-business.html" class="md-nav__link">
+      <a href="td-a-camada-metier.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    8. [TD]: A camada [business]
+    8. [TD]: A camada [metier]
   
 
     
@@ -579,10 +581,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#91-suporte" class="md-nav__link">
+  <a href="#91-support" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9.1. Suporte
+        9.1. Support
       
     </span>
   </a>
@@ -623,10 +625,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#95-o-ponto-de-entrada-da-aplicacao" class="md-nav__link">
+  <a href="#95-a-classe-de-inicializacao-da-aplicacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9.5. O ponto de entrada da aplicação
+        9.5. A classe de inicialização da aplicação
       
     </span>
   </a>
@@ -659,14 +661,14 @@
   
   
     <li class="md-nav__item">
-      <a href="trabalho-implementacao-da-camada-ui-utilizando-uma-interface-swing---.html" class="md-nav__link">
+      <a href="td-implementacao-da-camada-ui-com-uma-interface-swing.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. [Trabalho]: Implementação da camada [ui] utilizando uma interface Swing - 
+    10. [TD]: Implementação da camada [ui] com uma interface Swing
   
 
     
@@ -686,14 +688,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-gestao-de-bases-de-dados-relacionais-com-spring-data.html" class="md-nav__link">
+      <a href="cours-gestao-de-bases-de-dados-relacionais-com-spring-data.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    11. [Curso]: Gestão de bases de dados relacionais com Spring Data
+    11. [Cours]: Gestão de bases de dados relacionais com Spring Data
   
 
     
@@ -713,14 +715,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-implementacao-da-camada-dao-do-td-utilizando-spring-data.html" class="md-nav__link">
+      <a href="td-implementacao-da-camada-dao-do-td-com-spring-data.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. [TD]: Implementação da camada [DAO] do TD utilizando [Spring Data]
+    12. [TD]: Implementação da camada [DAO] do TD com [Spring Data]
   
 
     
@@ -740,14 +742,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-expor-uma-base-de-dados-na-web-com-spring-mvc.html" class="md-nav__link">
+      <a href="cours-expor-uma-base-de-dados-na-web-com-o-spring-mvc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    13. [Curso]: Expor uma base de dados na Web com Spring MVC
+    13. [Cours]: Expor uma base de dados na Web com o Spring MVC
   
 
     
@@ -767,14 +769,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-exposicao-web-da-camada-de-negocios.html" class="md-nav__link">
+      <a href="td-exposicao-na-web-da-camada-metier.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    14. [TD]: Exposição web da camada [de negócios]
+    14. [TD]: Exposição na Web da camada [metier]
   
 
     
@@ -801,7 +803,7 @@
   <span class="md-ellipsis">
     
   
-    15. [TD]: Criação de um cliente para o serviço web
+    15. [TD]: criação de um cliente para o serviço web
   
 
     
@@ -821,14 +823,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-protecao-do-acesso-a-um-servico-web-com-o-spring-security.html" class="md-nav__link">
+      <a href="cours-proteger-o-acesso-a-um-servico-web-com-o-spring-security.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    16. [Curso]: Proteção do acesso a um serviço web com o Spring Security
+    16. [Cours]: Proteger o acesso a um serviço web com o Spring Security
   
 
     
@@ -848,14 +850,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-protecao-do-servidor-web--json-para-eleicoes.html" class="md-nav__link">
+      <a href="td-seguranca-do-servidor-web--json-das-eleicoes.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    17. [TD]: Proteção do servidor web / JSON para eleições
+    17. [TD]: segurança do servidor web / jSON das eleições
   
 
     
@@ -875,14 +877,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-partilha-de-recursos-entre-origens.html" class="md-nav__link">
+      <a href="cours-gestao-de-acessos-entre-dominios.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    18. [Curso]: Partilha de Recursos entre Origens
+    18. [Cours]: Gestão de acessos entre domínios
   
 
     
@@ -902,14 +904,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-partilha-de-recursos-entre-origens-cors.html" class="md-nav__link">
+      <a href="td-eleicoes-com-pedidos-entre-dominios.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    19. [TD] Partilha de Recursos entre Origens (CORS)
+    19. [TD] Eleições com pedidos entre domínios
   
 
     
@@ -1020,17 +1022,17 @@
 
 
 
-<p><a id="refheading318371812363491"></a></p>
-<h1 id="9-td-implementacao-da-camada-ui-com-um-programa-de-consola">9. <span style="color: #365f91">[TD]: Implementação da camada [ui] com um programa de consola</span></h1>
+<p><span id="refheading318371812363491" name="refheading318371812363491" class="odt-bookmark-anchor"></span></p>
+<h1 id="9-td-implementacao-da-camada-ui-com-um-programa-de-consola">9. <span style="color: #365f91"><strong>[TD]: Implementação da camada [ui] com um programa de consola</strong></span></h1>
 <p><strong>Palavras-chave</strong>: arquitetura multicamadas, Spring, injeção de dependências.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051A0000011B44E3880A.png" width="653" height="142" style="display:inline-block; margin:4px;width:17.277cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/100000000000051A0000011B44E3880A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000051A0000011B44E3880A.png" width="653" height="142" style="display:inline-block; margin:4px;width:17.277cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/100000000000051A0000011B44E3880A.png" /></td></tr></table>
 
-<p><a id="refheading17455469506693"></a></p>
-<h2 id="91-suporte">9.1. <span style="color: #4f81bd">Suporte</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003BA00000294C4C67C2A.png" width="477" height="330" style="display:inline-block; margin:4px;width:12.621cm;height:8.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BA00000294C4C67C2A.png" /></td></tr></table>
+<p><span id="refheading17455469506693" name="refheading17455469506693" class="odt-bookmark-anchor"></span></p>
+<h2 id="91-support">9.1. <span style="color: #4f81bd">Support</span></h2>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003BA00000294C4C67C2A.png" width="477" height="330" style="display:inline-block; margin:4px;width:12.621cm;height:8.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BA00000294C4C67C2A.png" /></td></tr></table>
 
-<p>Em [1], a pasta [support / chap-09] contém o projeto Eclipse para a camada [UI] da aplicação de consola.</p>
-<p><a id="refheading17455669506693"></a></p>
+<p>No [1], a pasta [support / chap-09] contém o projeto Eclipse da camada [UI] da aplicação de consola.</p>
+<p><span id="refheading17455669506693" name="refheading17455669506693" class="odt-bookmark-anchor"></span></p>
 <h2 id="92-configuracao-do-maven">9.2. <span style="color: #4f81bd">Configuração do Maven</span></h2>
 <p>O projeto Eclipse [elections-ui-metier-dao-jdbc] é configurado pelo seguinte ficheiro Maven [pom.xml]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
@@ -1041,20 +1043,20 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">elections-ui-metier-dao-jdbc</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">0.0.1-SNAPSHOT</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">name</span><span style="color:#008080">&gt;</span><span style="color:#000000">elections-ui-metier-dao-jdbc</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">name</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">parent</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">org.springframework.boot</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">spring-boot-starter-parent</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">1.2.7.RELEASE</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">parent</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">properties</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">project.build.sourceEncoding</span><span style="color:#008080">&gt;</span><span style="color:#000000">UTF-8</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">project.build.sourceEncoding</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">java.version</span><span style="color:#008080">&gt;</span><span style="color:#000000">1.8</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">java.version</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">properties</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">&lt;!-- business --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">&lt;!-- função --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">istia.st.elections</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">elections-metier-dao-jdbc</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
@@ -1066,14 +1068,14 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">spring-boot</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">scope</span><span style="color:#008080">&gt;</span><span style="color:#000000">test</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">scope</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">&lt;!-- Spring Boot Test --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">&lt;!-- Teste do Spring Boot --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">org.springframework.boot</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">spring-boot-starter-test</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">scope</span><span style="color:#008080">&gt;</span><span style="color:#000000">test</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">scope</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- plugins --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">build</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">plugins</span><span style="color:#008080">&gt;</span></span></span>
@@ -1090,7 +1092,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">                    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">descriptorRefs</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">                </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">configuration</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">plugin</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">&lt;!-- to install the project artifact in the local Maven repository --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">&lt;!-- para a instalação do artefacto do projeto no repositório local do Maven --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">plugin</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">                </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">org.apache.maven.plugins</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">                </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">maven-surefire-plugin</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
@@ -1102,22 +1104,23 @@
 </code></pre></div>
 
 <ul>
-  <li>linhas 22–26: importamos o arquivo da camada [business] e, por extensão, o arquivo da camada [DAO];
+  <li>linhas 22-26: importa-se o arquivo da camada [métier] e, por consequência, o da camada [DAO];
   </li>
 </ul>
-<p><a id="refheading17455869506693"></a></p>
+
+<p><span id="refheading17455869506693" name="refheading17455869506693" class="odt-bookmark-anchor"></span></p>
 <h2 id="93-configuracao-do-spring">9.3. <span style="color: #4f81bd">Configuração do Spring</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000011E000000AC14E8B420.png" width="200" height="120" style="display:inline-block; margin:4px;width:5.3cm;height:3.187cm;" class="odt-zoomable" data-zoom-src="images/100000000000011E000000AC14E8B420.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000011E000000AC14E8B420.png" width="200" height="121" style="display:inline-block; margin:4px;width:5.3cm;height:3.191cm;" class="odt-zoomable" data-zoom-src="images/100000000000011E000000AC14E8B420.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <p>A classe [UiConfig] configura a aplicação Spring:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> elections.ui.config;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.annotation.ComponentScan;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.annotation.Import;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> elections.metier.config.MetierConfig;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@Import</span><span style="color:#000000">(MetierConfig.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@ComponentScan</span><span style="color:#000000">(basePackages = { </span><span style="color:#2a00ff">&quot;elections.ui.service&quot;</span><span style="color:#000000"> })</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> UiConfig {</span></span></span>
@@ -1125,22 +1128,23 @@
 </code></pre></div>
 
 <ul>
-  <li>Linha 8: Importamos os beans definidos na camada [business]. Esta camada já importou os beans definidos na camada [DAO]. Por isso, temos aqui acesso aos beans das três camadas;
+  <li>linha 8: importam-se os beans definidos na camada [métier]. Esta já importava os beans definidos na camada [DAO]. Assim, temos aqui acesso aos beans das três camadas;
   </li>
   <li>linha 9: o pacote [elections.ui.service] contém outros beans;
   </li>
 </ul>
-<p><a id="refheading318391812363491"></a></p>
+
+<p><span id="refheading318391812363491" name="refheading318391812363491" class="odt-bookmark-anchor"></span></p>
 <h2 id="94-a-interface-da-camada-ui">9.4. <span style="color: #4f81bd">A interface da camada [UI]</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000110000000BB2C62B0D2.png" width="190" height="131" style="display:inline-block; margin:4px;width:5.039cm;height:3.464cm;" class="odt-zoomable" data-zoom-src="images/1000000000000110000000BB2C62B0D2.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000110000000BB2C62B0D2.png" width="190" height="131" style="display:inline-block; margin:4px;width:5.039cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/1000000000000110000000BB2C62B0D2.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>Para compreender como poderá ser a interface Java da camada [UI], precisamos de saber quem irá utilizar esta interface. Não é o utilizador do diagrama acima, mas sim o programa que irá iniciar a aplicação como um todo.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004AC000001077CD9D27D.png" width="598" height="131" style="display:inline-block; margin:4px;width:15.822cm;height:3.478cm;" class="odt-zoomable" data-zoom-src="images/10000000000004AC000001077CD9D27D.png" /></td></tr></table>
+<p>Para compreender como pode ser a interface Java da camada [UI], precisamos de saber quem irá utilizar essa interface. Não se trata do utilizador do esquema acima, mas sim do programa que irá iniciar a aplicação na sua totalidade.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004AC000001077CD9D27D.png" width="598" height="132" style="display:inline-block; margin:4px;width:15.822cm;height:3.48cm;" class="odt-zoomable" data-zoom-src="images/10000000000004AC000001077CD9D27D.png" /></td></tr></table>
 
-<p>A interface [IElectionsUI] é apresentada ao programa principal [main], que irá iniciar a aplicação. O que pode [main] solicitar à camada [UI]? Pode solicitar-lhe que inicie interações com o utilizador que irá introduzir os dados eleitorais em falta. Iremos adotar a seguinte interface mínima:</p>
+<p>A interface [IElectionsUI] é apresentada ao programa principal [main], que irá iniciar a aplicação. O que pode o [main] solicitar à camada [ui]? Pode solicitar-lhe que inicie a interação com o utilizador que irá introduzir os dados em falta relativos à eleição. Adotaremos a seguinte interface mínima:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-markdown">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.elections.ui;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">interface</span><span style="color:#000000"> IElectionsUI {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#3f5fbf">/**</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">     </span><span style="color:#3f5fbf">*</span><span style="color:#000000"> </span><span style="color:#3f5fbf">lance</span><span style="color:#000000"> </span><span style="color:#3f5fbf">le</span><span style="color:#000000"> </span><span style="color:#3f5fbf">dialogue</span><span style="color:#000000"> </span><span style="color:#3f5fbf">avec</span><span style="color:#000000"> </span><span style="color:#3f5fbf">l&#x27;utilisateur</span></span></span>
@@ -1150,75 +1154,76 @@
 </code></pre></div>
 
 <ul>
-  <li>Linha 7: A interface tem apenas um método: <b>run</b>. Ao chamar este método, instruímos a camada [ui] a começar a interagir com o utilizador.
+  <li>linha 7: a interface tem apenas um único método: <b>run</b>. Ao chamar este método, solicita-se à camada [ui] que inicie a interação com o utilizador.
   </li>
 </ul>
-<p><a id="refheading318411812363491"></a></p>
-<h2 id="95-o-ponto-de-entrada-da-aplicacao">9.5. <span style="color: #4f81bd">O ponto de entrada da aplicação</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000116000000AE6E041AA8.png" width="195" height="122" style="display:inline-block; margin:4px;width:5.151cm;height:3.224cm;" class="odt-zoomable" data-zoom-src="images/1000000000000116000000AE6E041AA8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>A classe de inicialização da aplicação é uma classe Java com um método estático [main]. Este método deve criar instâncias das camadas [ui, business, demo] e instruir a camada [ui] a começar a interagir com o utilizador. Esta classe poderia ser a seguinte classe [<span style="color: #000000">AbstractBootElections</span>]:</p>
+<p><span id="refheading318411812363491" name="refheading318411812363491" class="odt-bookmark-anchor"></span></p>
+<h2 id="95-a-classe-de-inicializacao-da-aplicacao">9.5. <span style="color: #4f81bd">A classe de inicialização da aplicação</span></h2>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000116000000AE6E041AA8.png" width="195" height="122" style="display:inline-block; margin:4px;width:5.151cm;height:3.221cm;" class="odt-zoomable" data-zoom-src="images/1000000000000116000000AE6E041AA8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>A classe de inicialização da aplicação é uma classe Java que possui um método estático [main]. Este método deve criar instâncias das camadas [ui, metier, demo] e solicitar à camada [ui] que inicie o diálogo com o utilizador. Esta classe poderia ser a seguinte classe [AbstractBootElections]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> elections.ui.boot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.annotation.AnnotationConfigApplicationContext;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> elections.dao.entities.ElectionsException;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> elections.ui.config.UiConfig;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> elections.ui.service.IElectionsUI;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">abstract</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> AbstractBootElections {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// spring context retrieval</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// recuperação do contexto Spring</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> AnnotationConfigApplicationContext </span><span style="color:#0000c0">ctx</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> run() {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// instantiation layer [ui]</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// instanciação da camada [ui]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        IElectionsUI </span><span style="color:#6a3e3e">electionsUI</span><span style="color:#000000"> = </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">try</span><span style="color:#000000"> {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// spring context retrieval</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// recuperação do contexto Spring</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#0000c0">ctx</span><span style="color:#000000"> = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> AnnotationConfigApplicationContext(UiConfig.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// ui] layer recovery</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// recuperação da camada [ui]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#6a3e3e">electionsUI</span><span style="color:#000000"> = getUI();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        } </span><span style="font-weight:bold;color:#7f0055">catch</span><span style="color:#000000"> (</span><span style="color:#000000">RuntimeException</span><span style="color:#000000"> </span><span style="color:#6a3e3e">ex</span><span style="color:#000000">) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// we report the error</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// notificação do erro</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            afficheExceptions(</span><span style="color:#2a00ff">&quot;Les erreurs suivantes se sont produites :&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">ex</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// stop the application</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// a aplicação é encerrada</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            System.<span style="font-style:italic">exit</span>(1);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// execution layer [ui]</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// execução da camada [ui]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">try</span><span style="color:#000000"> {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#6a3e3e">electionsUI</span><span style="color:#000000">.run();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        } </span><span style="font-weight:bold;color:#7f0055">catch</span><span style="color:#000000"> (ElectionsException </span><span style="color:#6a3e3e">ex2</span><span style="color:#000000">) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// we report the error</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// o erro é sinalizado</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            afficheExceptions(</span><span style="color:#2a00ff">&quot;Les erreurs suivantes se sont produites :&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">ex2</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// stop the application</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// a aplicação é encerrada</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            System.<span style="font-style:italic">exit</span>(3);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        } </span><span style="font-weight:bold;color:#7f0055">catch</span><span style="color:#000000"> (</span><span style="color:#000000">RuntimeException</span><span style="color:#000000"> </span><span style="color:#6a3e3e">ex1</span><span style="color:#000000">) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// we report the error</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// o erro é comunicado</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            afficheExceptions(</span><span style="color:#2a00ff">&quot;Les erreurs suivantes se sont produites :&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">ex1</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// stop the application</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// a aplicação é encerrada</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">            System.<span style="font-style:italic">exit</span>(2);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">abstract</span><span style="color:#000000"> IElectionsUI getUI();</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> afficheExceptions(String </span><span style="color:#6a3e3e">message</span><span style="color:#000000">, ElectionsException </span><span style="color:#6a3e3e">ex</span><span style="color:#000000">) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// the message</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// é apresentada a mensagem</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        System.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">out</span><span style="color:#000000">.println(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;%s -------------&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">message</span><span style="color:#000000">));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        System.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">out</span><span style="color:#000000">.println(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;Code erreur : %d&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">ex</span><span style="color:#000000">.getCode()));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// errors are displayed</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// são apresentados os erros</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">for</span><span style="color:#000000"> (String </span><span style="color:#6a3e3e">erreur</span><span style="color:#000000"> : </span><span style="color:#6a3e3e">ex</span><span style="color:#000000">.getErreurs()) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            System.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">out</span><span style="color:#000000">.println(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;-- %s&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">erreur</span><span style="color:#000000">));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> afficheExceptions(String </span><span style="color:#6a3e3e">message</span><span style="color:#000000">, Exception </span><span style="color:#6a3e3e">ex</span><span style="color:#000000">) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// the message</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// exibe-se a mensagem</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        System.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">out</span><span style="color:#000000">.println(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;%s -------------&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">message</span><span style="color:#000000">));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// display the exception stack</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// exibe a pilha de exceções</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        Throwable </span><span style="color:#6a3e3e">cause</span><span style="color:#000000"> = </span><span style="color:#6a3e3e">ex</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">while</span><span style="color:#000000"> (</span><span style="color:#6a3e3e">cause</span><span style="color:#000000"> != </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            System.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">out</span><span style="color:#000000">.println(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;-- %s&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">cause</span><span style="color:#000000">.getMessage()));</span></span></span>
@@ -1229,9 +1234,9 @@
 </code></pre></div>
 
 <ul>
-  <li>Linha 19: O contexto Spring é instanciado: todos os beans definidos nos vários ficheiros de configuração serão criados;
+  <li>linha 19: o contexto Spring é instanciado: todos os beans definidos nos diferentes ficheiros de configuração serão criados;
   </li>
-  <li>linha 21: recuperamos uma referência ao bean que implementa a interface [IElectionsUI]. Iremos implementar a interface [IElectionsUI] utilizando dois beans:
+  <li>linha 21: obtém-se uma referência ao bean que implementa a interface [IElectionsUI]. Vamos implementar a interface [IElectionsUI] através de dois beans:
     <ul>
       <li>[ElectionsConsole] para uma aplicação de consola;
       </li>
@@ -1241,25 +1246,25 @@
   </li>
 </ul>
 
-<p>O método [getUI] é abstrato (linha 44). Na verdade, a classe [<span style="color: #000000">AbstractBootElections</span>] será a classe pai de duas classes:</p>
+<p>O método [getUI] é abstrato (linha 44). Com efeito, a classe [AbstractBootElections] será a classe pai de duas classes:</p>
 <ul>
-  <li>[<span style="color: #000000">BootElectionsConsole</span>], que fornecerá o bean [ElectionsConsole] à sua classe pai;
+  <li>[BootElectionsConsole], que fornecerá o bean [ElectionsConsole] à sua classe pai;
   </li>
-  <li>[<span style="color: #000000">BootElectionsSwing</span>], que fornecerá o bean [ElectionsSwing] à sua classe pai;
+  <li>[BootElectionsSwing], que fornecerá o bean [ElectionsSwing] à sua classe pai;
   </li>
   <li>linha 30: o método [run] da interface é executado;
   </li>
 </ul>
 
-<p>As exceções são tratadas em vários locais:</p>
+<p>As exceções são geridas em vários pontos:</p>
 <ul>
-  <li>linhas 22–27: pode ocorrer uma exceção durante a instanciação do contexto Spring;
+  <li>linhas 22-27: pode ocorrer uma exceção durante a instanciação do contexto Spring;
   </li>
-  <li>linhas 31–41: pode ocorrer uma exceção durante a execução da camada [UI]. Existem dois tipos de exceções:
+  <li>linhas 31-41: pode ocorrer uma exceção durante a execução da camada [UI]. Distinguem-se dois tipos de exceção:
     <ul>
-      <li>a classe [ElectionsException] lançada pela camada [DAO];
+      <li>a classe [ElectionsException], lançada pela camada [DAO];
       </li>
-      <li>a classe [RuntimeException] para outras exceções que possam ocorrer durante a execução;
+      <li>a classe [RuntimeException] para as restantes exceções que possam ocorrer durante a execução;
       </li>
     </ul>
   </li>
@@ -1268,14 +1273,14 @@
 <p>A classe [BootElectionsConsole] é a classe que inicia a implementação da consola. O seu código é o seguinte:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> elections.ui.boot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> elections.ui.service.IElectionsUI;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> BootElectionsConsole </span><span style="font-weight:bold;color:#7f0055">extends</span><span style="color:#000000"> AbstractBootElections{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">static</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> main(String[] </span><span style="color:#6a3e3e">arguments</span><span style="color:#000000">) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> BootElectionsConsole().run();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@Override</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> IElectionsUI getUI() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#0000c0">ctx</span><span style="color:#000000">.getBean(</span><span style="color:#2a00ff">&quot;electionsConsole&quot;</span><span style="color:#000000">,IElectionsUI.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">);</span></span></span>
@@ -1284,40 +1289,40 @@
 </code></pre></div>
 
 <ul>
-  <li>Linha 5: A classe [BootElectionsConsole] estende a classe [<span style="color: #000000">AbstractBootElections</span>]. Por conseguinte, deve implementar o método [getUI] que a sua classe pai declarou como abstrato;
+  <li>na linha 5, a classe [BootElectionsConsole] estende a classe [AbstractBootElections]. Por conseguinte, deve implementar o método [getUI] que a sua classe pai tinha declarado como abstrato;
   </li>
-  <li>linhas 10–13: implementação do método [getUI];
+  <li>linhas 10-13: implementação do método [getUI];
   </li>
-  <li>linha 12: o bean denominado [<span style="color: #2a00ff">electionsConsole</span>] é configurado para implementar a interface [<span style="color: #000000">IElectionsUI</span>]. [<span style="color: #0000c0">ctx</span>] é o contexto Spring definido na classe pai pela declaração:
+  <li>linha 12: define-se o bean denominado [electionsConsole] como implementador da interface [IElectionsUI]. [ctx] é o contexto Spring definido na classe pai pela declaração:
   </li>
 </ul>
 
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// spring context retrieval</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// recuperação do contexto Spring</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> AnnotationConfigApplicationContext </span><span style="color:#0000c0">ctx</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
-<p>Como o campo tem o atributo [protected], é visível nas classes filhas.</p>
-<p>O bean na linha 12 será declarado da seguinte forma:</p>
+<p>Como o campo possui o atributo [protected], está visível nas classes filhas.</p>
+<p>O bean da linha 12 será declarado da seguinte forma:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content">@Component</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> ElectionsConsole </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> IElectionsUI {</span></span></span>
 </code></pre></div>
 
-<p>O nome padrão deste bean é o nome da classe com a primeira letra minúscula. Pode substituir este nome padrão escrevendo explicitamente:</p>
+<p>O nome por predefinição deste bean é o nome da classe com a primeira letra em minúscula. É possível ignorar este nome por predefinição escrevendo explicitamente:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>@Component(nom_du_bean_entre_guillemets)
 </code></pre></div>
-<p>A classe [BootElectionsSwing] que iniciaria a implementação do Swing poderia ser a seguinte:</p>
+<p>A classe [BootElectionsSwing], que executaria a implementação Swing, poderia ser a seguinte:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> elections.ui.boot;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> elections.ui.service.IElectionsUI;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> BootElectionsSwing </span><span style="font-weight:bold;color:#7f0055">extends</span><span style="color:#000000"> AbstractBootElections {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">static</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> main(String[] </span><span style="color:#6a3e3e">arguments</span><span style="color:#000000">) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> BootElectionsSwing().run();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@Override</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> IElectionsUI getUI() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#0000c0">ctx</span><span style="color:#000000">.getBean(</span><span style="color:#2a00ff">&quot;electionsSwing&quot;</span><span style="color:#000000">, IElectionsUI.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">);</span></span></span>
@@ -1325,12 +1330,12 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Este padrão de design, no qual o comportamento comum às classes é agrupado numa classe pai, e as classes filhas ficam encarregadas de implementar os seus detalhes específicos, é chamado de padrão de design <em>Strategy</em>. Este padrão de design impõe um comportamento comum a todas as classes filhas.</p>
-<p><a id="refheading318431812363491"></a></p>
+<p>Este modelo de conceção, em que se agrupa o comportamento comum às classes numa classe-pai e se deixa que as classes-filhas implementem os detalhes que lhes são específicos, denomina-se modelo de conceção <em>Strategy</em>. Este modelo de conceção impõe um comportamento comum a todas as classes-filhas.</p>
+<p><span id="refheading318431812363491" name="refheading318431812363491" class="odt-bookmark-anchor"></span></p>
 <h2 id="96-a-classe-de-implementacao-electionsconsole">9.6. <span style="color: #4f81bd">A classe de implementação [ElectionsConsole]</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000011F000000C4BF01BDDF.png" width="201" height="137" style="display:inline-block; margin:4px;width:5.309cm;height:3.627cm;" class="odt-zoomable" data-zoom-src="images/100000000000011F000000C4BF01BDDF.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000011F000000C4BF01BDDF.png" width="201" height="137" style="display:inline-block; margin:4px;width:5.309cm;height:3.63cm;" class="odt-zoomable" data-zoom-src="images/100000000000011F000000C4BF01BDDF.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>A nossa primeira classe de implementação para a camada [ui] será uma classe que utiliza a consola para comunicar com o utilizador. Aqui está um exemplo de uma caixa de diálogo apresentada na consola do Eclipse:</p>
+<p>A nossa primeira classe de implementação da camada [ui] será uma classe que utiliza a consola para comunicar com o utilizador. Eis um exemplo de diálogo obtido na consola do Eclipse:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">Il y a 7 listes en compétition. Veuillez indiquer le nombre de voix de chacune d&#x27;elles :</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">Nombre de voix de la liste [A] : 2500</span></span>
@@ -1342,9 +1347,9 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">Nombre de voix de la liste [E] : </span><span style="color:#00c87d">16000</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">Nombre de voix de la liste [F] : </span><span style="color:#00c87d">25000</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">Nombre de voix de la liste [G] : </span><span style="color:#00c87d">32000</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">Résultats de l&#x27;élection</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">[G,32000,2,false]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">[F,25000,2,false]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">[E,16000,1,false]</span></span>
@@ -1354,50 +1359,50 @@
 <span class="odt-code-line"><span class="odt-code-line-content">[A,2500,0,true]</span></span>
 </code></pre></div>
 
-<p>A classe [<span style="color: #000000">ElectionsConsole</span>] poderia ter a seguinte estrutura:</p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<p>A classe [ElectionsConsole] poderia ter a seguinte estrutura:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-sql">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> elections.ui.service;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.Comparator;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.Scanner;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.beans.factory.annotation.Autowired;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.stereotype.Component;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> elections.dao.entities.ListeElectorale;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> elections.metier.service.IElectionsMetier;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">@Component</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> ElectionsConsole </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> IElectionsUI {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@Autowired</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> IElectionsMetier </span><span style="text-decoration:underline;color:#0000c0">electionsMetier</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@Override</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> run() {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// data entry</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// introdução de dados</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">try</span><span style="color:#000000"> (Scanner </span><span style="color:#6a3e3e">clavier</span><span style="color:#000000"> = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Scanner(System.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">in</span><span style="color:#000000">)) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// lists in competition are requested from the [metier] layer</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// we enter the votes</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// solicita-se as listas em competição à camada [metier]</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// efetua-se a contagem dos votos</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// we calculate the number of seats</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// we record the results</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// lists sorted in descending order of votes</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// we display them</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// cálculo dos lugares</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// regista-se os resultados</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// ordena-se as listas por ordem decrescente de votos</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// são apresentadas</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// electoral list comparison class</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// classe de comparação de listas eleitorais</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> CompareListesElectorales </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> Comparator&lt;ListeElectorale&gt; {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// comparison of two candidate lists by number of votes</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// comparação de duas listas de candidatos com base no número de votos</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#646464">@Override</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> compare(ListeElectorale </span><span style="color:#6a3e3e">listeElectorale1</span><span style="color:#000000">, ListeElectorale </span><span style="color:#6a3e3e">listeElectorale2</span><span style="color:#000000">) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// we compare the votes of these two lists</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#000000">// compara-se o número de votos destas duas listas</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> </span><span style="color:#6a3e3e">nbVoix1</span><span style="color:#000000"> = </span><span style="color:#6a3e3e">listeElectorale1</span><span style="color:#000000">.getVoix();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> </span><span style="color:#6a3e3e">nbVoix2</span><span style="color:#000000"> = </span><span style="color:#6a3e3e">listeElectorale2</span><span style="color:#000000">.getVoix();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="font-weight:bold;color:#7f0055">if</span><span style="color:#000000"> (</span><span style="color:#6a3e3e">nbVoix1</span><span style="color:#000000"> &lt; </span><span style="color:#6a3e3e">nbVoix2</span><span style="color:#000000">) {</span></span></span>
@@ -1410,31 +1415,31 @@
 <span class="odt-code-line"><span class="odt-code-line-content">            }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
-  <li>linha 12: a classe [<span style="color: #000000">ElectionsConsole</span>] é um componente Spring;
+  <li>linha 12: a classe [ElectionsConsole] é um componente Spring;
   </li>
   <li>linha 13: a classe implementa a interface [IElectionsUI]
   </li>
-  <li>linhas 15–16: o Spring injeta uma referência na camada [business];
+  <li>linhas 15-16: injeção pelo Spring de uma referência na camada [metier];
   </li>
-  <li>linhas 18–34: o método [run] da interface [IelectionsUI];
+  <li>linhas 18-34: o método [run] da interface [IelectionsUI];
   </li>
 </ul>
 
-<p>O bloco <em>try</em> nas linhas 21–28 é denominado <em>try-with-resources,</em> e a sua sintaxe é a seguinte:</p>
+<p>O <em>try</em> das linhas 21-28 chama-se <em>try-with-resources</em> e a sua sintaxe é a seguinte:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>try(ressource){
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a>…
 <a id="__codelineno-1-3" name="__codelineno-1-3"></a>}
 </code></pre></div></td></tr></table></div>
-<p>O recurso na linha 1 deve implementar a interface [<span style="color: #000000">java.lang.AutoCloseable</span>]. O recurso é aberto na linha 1 e fechado automaticamente após a linha 3, independentemente de ocorrer ou não uma exceção no código executado entre as duas linhas. Esta sintaxe garante que um recurso aberto será fechado, aconteça o que acontecer.</p>
+<p>O recurso da linha 1 deve implementar a interface [java.lang.AutoCloseable]. O recurso é aberto na linha 1 e fechado automaticamente após a linha 3, independentemente de ocorrer ou não uma exceção no código executado entre as duas linhas. Esta sintaxe permite garantir que um recurso aberto será efetivamente fechado, aconteça o que acontecer.</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-<p><strong>Tarefa</strong>: Escreva o código para o método [run]. Use os comentários como guia.</p>
+<p><strong>Tarefa a realizar</strong>: escreva o código do método [run]. Utilize os comentários como ajuda.</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
 
 

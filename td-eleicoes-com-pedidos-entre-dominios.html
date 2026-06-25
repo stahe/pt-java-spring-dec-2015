@@ -12,10 +12,10 @@
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/pt-java-spring-dec-2015/td-partilha-de-recursos-entre-origens-cors.html">
+        <link rel="canonical" href="https://stahe.github.io/pt-java-spring-dec-2015/td-eleicoes-com-pedidos-entre-dominios.html">
       
       
-        <link rel="prev" href="curso-partilha-de-recursos-entre-origens.html">
+        <link rel="prev" href="cours-gestao-de-acessos-entre-dominios.html">
       
       
         <link rel="next" href="programacao-assincrona-com-rxjava.html">
@@ -29,7 +29,7 @@
     
     
       
-        <title>19. [TD] Partilha de Recursos entre Origens (CORS) - Introdução à linguagem Java e ao ecossistema Spring</title>
+        <title>19. [TD] Eleições com pedidos entre domínios - Introdução à linguagem Java e ao ecossistema Spring</title>
       
     
     
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -92,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#19-td-partilha-de-recursos-entre-origens-cors" class="md-skip">
+        <a href="#19-td-eleicoes-com-pedidos-entre-dominios" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              19. [TD] Partilha de Recursos entre Origens (CORS)
+              19. [TD] Eleições com pedidos entre domínios
             
           </span>
         </div>
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="trabalho-o-problema.html" class="md-nav__link">
+      <a href="td-o-problema.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. [Trabalho]: O Problema
+    2. [TD]: O problema
   
 
     
@@ -411,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-introducao-ao-spring-framework.html" class="md-nav__link">
+      <a href="cours-introducao-ao-framework-spring.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. [Curso]: Introdução ao Spring Framework
+    5. [Cours]: Introdução ao framework Spring
   
 
     
@@ -438,14 +440,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-introducao-a-api-jdbc.html" class="md-nav__link">
+      <a href="cours-introducao-ao-api-jdbc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. [Curso]: Introdução à API JDBC
+    6. [Cours]: Introdução ao API JDBC
   
 
     
@@ -465,14 +467,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-implementacao-da-camada-dao-do-td-utilizando-a-api-jdbc.html" class="md-nav__link">
+      <a href="td-implementacao-da-camada-dao-do-td-com-o-api-jdbc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. [TD]: Implementação da camada [DAO] do TD utilizando a API JDBC
+    7. [TD]: Implementação da camada [DAO] do TD com o API JDBC
   
 
     
@@ -492,14 +494,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-a-camada-business.html" class="md-nav__link">
+      <a href="td-a-camada-metier.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    8. [TD]: A camada [business]
+    8. [TD]: A camada [metier]
   
 
     
@@ -546,14 +548,14 @@
   
   
     <li class="md-nav__item">
-      <a href="trabalho-implementacao-da-camada-ui-utilizando-uma-interface-swing---.html" class="md-nav__link">
+      <a href="td-implementacao-da-camada-ui-com-uma-interface-swing.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. [Trabalho]: Implementação da camada [ui] utilizando uma interface Swing - 
+    10. [TD]: Implementação da camada [ui] com uma interface Swing
   
 
     
@@ -573,14 +575,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-gestao-de-bases-de-dados-relacionais-com-spring-data.html" class="md-nav__link">
+      <a href="cours-gestao-de-bases-de-dados-relacionais-com-spring-data.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    11. [Curso]: Gestão de bases de dados relacionais com Spring Data
+    11. [Cours]: Gestão de bases de dados relacionais com Spring Data
   
 
     
@@ -600,14 +602,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-implementacao-da-camada-dao-do-td-utilizando-spring-data.html" class="md-nav__link">
+      <a href="td-implementacao-da-camada-dao-do-td-com-spring-data.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. [TD]: Implementação da camada [DAO] do TD utilizando [Spring Data]
+    12. [TD]: Implementação da camada [DAO] do TD com [Spring Data]
   
 
     
@@ -627,14 +629,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-expor-uma-base-de-dados-na-web-com-spring-mvc.html" class="md-nav__link">
+      <a href="cours-expor-uma-base-de-dados-na-web-com-o-spring-mvc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    13. [Curso]: Expor uma base de dados na Web com Spring MVC
+    13. [Cours]: Expor uma base de dados na Web com o Spring MVC
   
 
     
@@ -654,14 +656,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-exposicao-web-da-camada-de-negocios.html" class="md-nav__link">
+      <a href="td-exposicao-na-web-da-camada-metier.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    14. [TD]: Exposição web da camada [de negócios]
+    14. [TD]: Exposição na Web da camada [metier]
   
 
     
@@ -688,7 +690,7 @@
   <span class="md-ellipsis">
     
   
-    15. [TD]: Criação de um cliente para o serviço web
+    15. [TD]: criação de um cliente para o serviço web
   
 
     
@@ -708,14 +710,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-protecao-do-acesso-a-um-servico-web-com-o-spring-security.html" class="md-nav__link">
+      <a href="cours-proteger-o-acesso-a-um-servico-web-com-o-spring-security.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    16. [Curso]: Proteção do acesso a um serviço web com o Spring Security
+    16. [Cours]: Proteger o acesso a um serviço web com o Spring Security
   
 
     
@@ -735,14 +737,14 @@
   
   
     <li class="md-nav__item">
-      <a href="td-protecao-do-servidor-web--json-para-eleicoes.html" class="md-nav__link">
+      <a href="td-seguranca-do-servidor-web--json-das-eleicoes.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    17. [TD]: Proteção do servidor web / JSON para eleições
+    17. [TD]: segurança do servidor web / jSON das eleições
   
 
     
@@ -762,14 +764,14 @@
   
   
     <li class="md-nav__item">
-      <a href="curso-partilha-de-recursos-entre-origens.html" class="md-nav__link">
+      <a href="cours-gestao-de-acessos-entre-dominios.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    18. [Curso]: Partilha de Recursos entre Origens
+    18. [Cours]: Gestão de acessos entre domínios
   
 
     
@@ -798,14 +800,14 @@
         
       
       
-      <a href="td-partilha-de-recursos-entre-origens-cors.html" class="md-nav__link md-nav__link--active">
+      <a href="td-eleicoes-com-pedidos-entre-dominios.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    19. [TD] Partilha de Recursos entre Origens (CORS)
+    19. [TD] Eleições com pedidos entre domínios
   
 
     
@@ -917,33 +919,33 @@
 
 
 
-<p><a id="refheading1192901799226695"></a></p>
-<h1 id="19-td-partilha-de-recursos-entre-origens-cors">19. <span style="color: #365f91">[TD] Partilha de Recursos entre Origens (CORS)</span></h1>
-<p><strong>Palavras-chave</strong>: CORS (Partilha de Recursos entre Origens).</p>
-<p>Aqui, vamos criar um novo projeto para que o serviço web de eleições seguras aceite pedidos entre domínios.</p>
+<p><span id="refheading1192901799226695" name="refheading1192901799226695" class="odt-bookmark-anchor"></span></p>
+<h1 id="19-td-eleicoes-com-pedidos-entre-dominios">19. <span style="color: #365f91">[TD] Eleições com pedidos entre domínios</span></h1>
+<p><strong>Palavras-chave</strong>: CORS (Cross-Origin Resource Sharing).</p>
+<p>Vamos aqui criar um novo projeto para que o serviço web seguro das eleições aceite pedidos entre domínios.</p>
 <p>O projeto Eclipse é o seguinte:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001860000015FD7541C97.png" width="273" height="246" style="display:inline-block; margin:4px;width:7.22cm;height:6.498cm;" class="odt-zoomable" data-zoom-src="images/10000000000001860000015FD7541C97.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001860000015FD7541C97.png" width="273" height="246" style="display:inline-block; margin:4px;width:7.22cm;height:6.5cm;" class="odt-zoomable" data-zoom-src="images/10000000000001860000015FD7541C97.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-<p><strong>Tarefa</strong>: Siga o processo descrito na <a href="#refheading4853838046689"><u><span style="color: #0563c1">Secção 18.9</span></u></a> para compilar este projeto.</p>
+<p><strong>Tarefa a realizar</strong>: seguindo o processo descrito no parágrafo<a href="cours-gestao-de-acessos-entre-dominios.html#refheading4853838046689"><u><span style="color: #0563c1"> 18.9</span></u></a>, compile este projeto.</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<p>Depois de compilar este projeto, eis o que pode fazer com o cliente HTML descrito na <a href="#refheading196717811596012"><u><span style="color: #0563c1">Secção 18.2</span></u></a>. No início das solicitações, a base de dados [dbelections] apresenta-se da seguinte forma:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D90000003ECAC75DD1.png" width="152" height="43" style="display:inline-block; margin:4px;width:4.02cm;height:1.148cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D90000003ECAC75DD1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000FB000000D64999C1AB.png" width="176" height="150" style="display:inline-block; margin:4px;width:4.65cm;height:3.965cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FB000000D64999C1AB.png" /></td></tr></table>
+<p>Quando este projeto estiver compilado, eis o que se pode fazer com o cliente HTML descrito no parágrafo<a href="cours-gestao-de-acessos-entre-dominios.html#refheading196717811596012"><u><span style="color: #0563c1"> 18.2</span></u></a>. No início das solicitações, a base de dados [dbelections] é a seguinte:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000D90000003ECAC75DD1.png" width="152" height="43" style="display:inline-block; margin:4px;width:4.02cm;height:1.15cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D90000003ECAC75DD1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000FB000000D64999C1AB.png" width="176" height="150" style="display:inline-block; margin:4px;width:4.65cm;height:3.96cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FB000000D64999C1AB.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002DA00000186C8EB9E8E.png" width="511" height="273" style="display:inline-block; margin:4px;width:13.52cm;height:7.223cm;" class="odt-zoomable" data-zoom-src="images/10000000000002DA00000186C8EB9E8E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002DA00000186C8EB9E8E.png" width="511" height="273" style="display:inline-block; margin:4px;width:13.52cm;height:7.22cm;" class="odt-zoomable" data-zoom-src="images/10000000000002DA00000186C8EB9E8E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000387000001D7B91D761D.png" width="632" height="330" style="display:inline-block; margin:4px;width:16.72cm;height:8.721cm;" class="odt-zoomable" data-zoom-src="images/1000000000000387000001D7B91D761D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000387000001D7B91D761D.png" width="632" height="330" style="display:inline-block; margin:4px;width:16.72cm;height:8.721cm;" class="odt-zoomable" data-zoom-src="images/1000000000000387000001D7B91D761D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000483000002F8B945C78F.png" width="578" height="380" style="display:inline-block; margin:4px;width:15.281cm;height:10.054cm;" class="odt-zoomable" data-zoom-src="images/1000000000000483000002F8B945C78F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000483000002F8B945C78F.png" width="578" height="380" style="display:inline-block; margin:4px;width:15.281cm;height:10.054cm;" class="odt-zoomable" data-zoom-src="images/1000000000000483000002F8B945C78F.png" /></td></tr></table>
 
-<p>Em [1], o valor JSON enviado é o seguinte:</p>
+<p>Em [1], o valor jSON lançado é o seguinte:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[{&quot;id&quot;:1,&quot;version&quot;:8,&quot;nom&quot;:&quot;A&quot;,&quot;voix&quot;:32000,&quot;sieges&quot;:0,&quot;elimine&quot;:false},{&quot;id&quot;:2,&quot;version&quot;:12,&quot;nom&quot;:&quot;B&quot;,&quot;voix&quot;:25000,&quot;sieges&quot;:0,&quot;elimine&quot;:false},{&quot;id&quot;:3,&quot;version&quot;:13,&quot;nom&quot;:&quot;C&quot;,&quot;voix&quot;:16000,&quot;sieges&quot;:0,&quot;elimine&quot;:false},{&quot;id&quot;:4,&quot;version&quot;:12,&quot;nom&quot;:&quot;D&quot;,&quot;voix&quot;:12000,&quot;sieges&quot;:0,&quot;elimine&quot;:false},{&quot;id&quot;:5,&quot;version&quot;:13,&quot;nom&quot;:&quot;E&quot;,&quot;voix&quot;:8000,&quot;sieges&quot;:0,&quot;elimine&quot;:false},{&quot;id&quot;:6,&quot;version&quot;:12,&quot;nom&quot;:&quot;F&quot;,&quot;voix&quot;:4500,&quot;sieges&quot;:0,&quot;elimine&quot;:false},{&quot;id&quot;:7,&quot;version&quot;:12,&quot;nom&quot;:&quot;G&quot;,&quot;voix&quot;:2500,&quot;sieges&quot;:0,&quot;elimine&quot;:false}]
 </code></pre></div>
-<p>Em [2], os campos [lugares] e [eliminados] foram calculados. Copiamos o campo [corpo] de [2] para [3] abaixo:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003960000025ADA871EE0.png" width="459" height="301" style="display:inline-block; margin:4px;width:12.144cm;height:7.964cm;" class="odt-zoomable" data-zoom-src="images/10000000000003960000025ADA871EE0.png" /></td></tr></table>
+<p>Em [2], os campos [sieges] e [elimine] foram calculados. Copiamos o campo [body] de [2] para [3], conforme se segue:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003960000025ADA871EE0.png" width="459" height="301" style="display:inline-block; margin:4px;width:12.144cm;height:7.964cm;" class="odt-zoomable" data-zoom-src="images/10000000000003960000025ADA871EE0.png" /></td></tr></table>
 
 <p>A base de dados [dbelections] fica então da seguinte forma:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D90000003ECAC75DD1.png" width="152" height="43" style="display:inline-block; margin:4px;width:4.02cm;height:1.148cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D90000003ECAC75DD1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010F000000C74D72A591.png" width="190" height="139" style="display:inline-block; margin:4px;width:5.02cm;height:3.687cm;" class="odt-zoomable" data-zoom-src="images/100000000000010F000000C74D72A591.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000D90000003ECAC75DD1.png" width="152" height="43" style="display:inline-block; margin:4px;width:4.02cm;height:1.15cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D90000003ECAC75DD1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000010F000000C74D72A591.png" width="190" height="139" style="display:inline-block; margin:4px;width:5.02cm;height:3.679cm;" class="odt-zoomable" data-zoom-src="images/100000000000010F000000C74D72A591.png" /></td></tr></table>
 
 
 

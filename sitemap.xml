@@ -2,94 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/index.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/anexos.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/conclusao.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/curso-expor-uma-base-de-dados-na-web-com-spring-mvc.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/cours-expor-uma-base-de-dados-na-web-com-o-spring-mvc.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/curso-gestao-de-bases-de-dados-relacionais-com-spring-data.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/cours-gestao-de-acessos-entre-dominios.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/curso-introducao-a-api-jdbc.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/cours-gestao-de-bases-de-dados-relacionais-com-spring-data.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/curso-introducao-ao-spring-framework.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/cours-introducao-ao-api-jdbc.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/curso-partilha-de-recursos-entre-origens.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/cours-introducao-ao-framework-spring.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/curso-protecao-do-acesso-a-um-servico-web-com-o-spring-security.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/cours-proteger-o-acesso-a-um-servico-web-com-o-spring-security.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/introducao.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/programacao-assincrona-com-rxjava.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-a-camada-business.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-a-camada-metier.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-arquiteturas-em-camadas.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-classes.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-criacao-de-um-cliente-para-o-servico-web.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-exposicao-web-da-camada-de-negocios.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-eleicoes-com-pedidos-entre-dominios.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-implementacao-da-camada-dao-do-td-utilizando-a-api-jdbc.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-exposicao-na-web-da-camada-metier.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-implementacao-da-camada-dao-do-td-utilizando-spring-data.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-implementacao-da-camada-dao-do-td-com-o-api-jdbc.html</loc>
+         <lastmod>2026-06-25</lastmod>
+    </url>
+    <url>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-implementacao-da-camada-dao-do-td-com-spring-data.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
          <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-implementacao-da-camada-ui-com-um-programa-de-consola.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-partilha-de-recursos-entre-origens-cors.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-implementacao-da-camada-ui-com-uma-interface-swing.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-protecao-do-servidor-web--json-para-eleicoes.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-o-problema.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
     <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/trabalho-implementacao-da-camada-ui-utilizando-uma-interface-swing---.html</loc>
-         <lastmod>2026-05-06</lastmod>
-    </url>
-    <url>
-         <loc>https://stahe.github.io/pt-java-spring-dec-2015/trabalho-o-problema.html</loc>
-         <lastmod>2026-05-06</lastmod>
+         <loc>https://stahe.github.io/pt-java-spring-dec-2015/td-seguranca-do-servidor-web--json-das-eleicoes.html</loc>
+         <lastmod>2026-06-25</lastmod>
     </url>
 </urlset>
